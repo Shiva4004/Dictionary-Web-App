@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container" id="app-container">
+        <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle" class="toggle-checkbox">
+            <label for="darkModeToggle" class="toggle-label"></label>
+        </div>
+        <h1>Dictionary</h1>
+        <input type="text" id="wordInput" placeholder="Enter a word">
+        <button onclick="searchWord()">Search</button>
+        <div id="resultContainer" class="hidden">
+            <h2 id="wordTitle"></h2>
+            <p id="definition"></p>
+            <p id="example"></p>
+            <p id="partOfSpeech"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
